@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* 폰트 gpt사용 */
+  color: #111;
+  background: #f6f7fb;
+}
+
+.header {
+  background: #fff;
+}
+
+.nav {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-img {
+  width: 150px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.nav-menu {
+  margin-left: auto;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav-menu a {
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  opacity: 0.7;
+}
+
+/* .nav-logsign {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.75;
+  display: block;
+}
+
+.icon:hover {
+  opacity: 1;
+} */
+
+/* 위에까지 공통으로 사용 */
+.page {
+  min-height: calc(100vh - 64px);
+  padding: 34px 0 80px;
+  background: #f6f7fb;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.main {
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 18px 52px rgba(0,0,0,0.10);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.82);
+  margin-bottom: 18px;
+}
+
+.day {
+  padding: 6px 0 2px;
+}
+
+.day-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.day-head h2 {
+  font-size: 14px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.78);
+  line-height: 1.35;
+}
+
+.c {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  color: #4f6ef7;
+  background: rgba(79,110,247,0.10);
+  border: 1px solid rgba(79,110,247,0.20);
+  flex: 0 0 auto;
+}
+
+.c2{
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.detail {
+  margin-top: 14px;
+}
+
+.detail h3 {
+  font-size: 13px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.78);
+  margin-bottom: 8px;
+}
+
+.list {
+  list-style: disc;
+  padding-left: 18px;
+  color: rgba(0,0,0,0.72);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.sc {
+  list-style: disc;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.75;
+  color: rgba(0,0,0,0.74);
+}
+
+.sc li {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.t {
+  font-weight: 800;
+  color: rgba(0,0,0,0.70);
+  white-space: nowrap;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
+.btns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: 0.18s;
+  white-space: nowrap;
+}
+
+.btn-pri {
+  background: #ff7a00;
+  color: #fff;
+  box-shadow: 0 12px 22px rgba(255,122,0,0.22);
+}
+
+.btn-pri:hover {
+  transform: translateY(-1px);
+  filter: brightness(0.98);
+}
+
+.btn-other {
+  background: rgba(255,122,0,0.08);
+  color: #ff7a00;
+  border-color: rgba(255,122,0,0.22);
+}
+
+.btn-other:hover {
+  background: rgba(255,122,0,0.12);
+  transform: translateY(-1px);
+}
+
+.sub {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.sub-title {
+  font-size: 12.5px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.72);
+  margin-bottom: 6px;
+}
+
+.line {
+  height: 1px;
+  background: rgba(0,0,0,0.08);
+  margin: 18px 0;
+}
+
+.plan {
+  margin-top: 4px;
+}
+
+.plan-title {
+  font-size: 14px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.78);
+  margin-bottom: 10px;
+}
+
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-row {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(0,0,0,0.74);
+}
+
+.plan-row:last-child {
+  border-bottom: none;
+}
