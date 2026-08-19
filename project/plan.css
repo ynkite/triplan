@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* 폰트 gpt사용 */
+  color: #111;
+  background: #f6f7fb;
+}
+
+.header {
+  background: #fff;
+}
+
+.nav {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-img {
+  width: 150px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.nav-menu {
+  margin-left: auto;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav-menu a {
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  opacity: 0.7;
+}
+
+/* .nav-logsign {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.75;
+  display: block;
+}
+
+.icon:hover {
+  opacity: 1;
+} */
+
+/* 위에까지 공통으로 사용 */
+
+.wrap {
+  min-height: calc(100vh - 60px);
+  padding: 64px 0 90px;
+}
+
+.box {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.edit {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  background: #ff7a2f;
+  padding: 7px 10px;
+  border-radius: 8px;
+}
+
+.rows {
+  padding: 8px 16px 14px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  width: 92px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.55);
+}
+
+.value {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.82);
+}
+
+.total .value {
+  font-weight: 900;
+  color: #111;
+}
+
+.btn {
+  margin-top: 14px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background: #4f6ef7;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 14px 16px;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  background: #3d5ae0;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(0,0,0,0.45);
+}

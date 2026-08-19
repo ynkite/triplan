@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* 폰트 gpt사용 */
+  color: #111;
+  background: #f6f7fb;
+}
+
+.header {
+  background: #fff;
+}
+
+.nav {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-img {
+  width: 150px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.nav-menu {
+  margin-left: auto;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav-menu a {
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  opacity: 0.7;
+}
+
+.nav-logsign {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.75;
+  display: block;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+/* 위에까지 공통으로 사용 */
+
+.main {
+  background: url("../projectimg/main.png") no-repeat center / cover;
+}
+
+.sub {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+  min-height: 560px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.intitle {
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.intstrong {
+  display: block;
+  margin-top: 14px;
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.panel {
+  width: 100%;
+}
+
+.chat {
+  width: 100%;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.log {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  max-height: 240px;
+  overflow: auto;
+}
+
+.msg {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 75%;
+  padding: 12px 14px;
+  border-radius: 14px;
+}
+
+.msg.bot {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+}
+
+.msg.me {
+  align-self: flex-end;
+  background: #4f6ef7;
+  color: #fff;
+}
+
+.input1 {
+  margin-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding-top: 12px;
+}
+
+.input2 {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 15px;
+  padding: 12px 10px;
+}
+
+.panel2 {
+  margin-top: 14px;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: #4f6ef7;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #3d5ae0;
+}
+
+.btn.small {
+  width: auto;
+  padding: 12px 18px;
+  font-size: 14px;
+}
+
+.cards {
+  max-width: 1300px;
+  margin: 70px auto 40px;
+  padding: 0 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  transition: 0.2s;
+}
+
+.cardimg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.cardtitle {
+  text-align: center;
+  padding: 16px 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.steps1 {
+  background: #fff;
+  padding: 70px 0 80px;
+}
+
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.stepstitle {
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.stepssub {
+  margin-top: 10px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.steps2{
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.step {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  padding: 18px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.step1234 {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.steptitle {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.steptext {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.stepsfoot {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hint {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  background: #f6f7f9;
+  padding: 38px 0 42px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+
+.footertitle {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 800;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footertext {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.55);
+  max-width: 1060px;
+}
+
+.footerbottom {
+  margin-top: 16px;
+}
+
+.footerlinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.footerlinks a {
+  color: rgba(0, 0, 0, 0.55);
+  text-decoration: none;
+}
+
+.footerlinks a:hover {
+  text-decoration: underline;
+}
+
+/* 반응형 웹 구현 크기만 줄이기 */
+@media (max-width: 1200px) {
+  .sub { padding: 0 60px; gap: 40px; }
+  .cards { padding: 0 60px; }
+  .wrap { padding: 0 60px; }
+}
+
+
+@media (max-width: 900px) {
+  .nav { padding: 0 16px; }
+  .brand-img { width: 130px; height: 86px; margin-top: 6px; }
+
+  .sub {
+    padding: 56px 20px 40px;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    min-height: auto;
+  }
+
+  .chat { margin-top: 18px; }
+
+  .intstrong { font-size: 36px; }
+
+  .cards {
+    padding: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin: 40px auto 28px;
+  }
+
+  .wrap { padding: 0 20px; }
+
+  .steps2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+@media (max-width: 560px) {
+  .nav {
+    height: auto;
+    padding: 10px 12px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .brand {
+    flex: 0 0 auto;
+  }
+
+  .brand-img {
+    width: 120px;
+    height: 80px;
+    margin-top: 0;
+  }
+
+  .nav-menu {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 14px;
+    padding: 6px 0 2px;
+  }
+
+  .nav-menu a {
+    font-size: 12px;
+  }
+
+  .nav-logsign {
+    margin-left: auto;
+  }
+}
+
+/* 로그인팝업 css */
+.pop {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+}
+
+.pop.on { display: block; }
+
+.dim {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
+}
+
+.box {
+  position: relative;
+  width: min(420px, calc(100% - 40px));
+  margin: 90px auto 0;
+  padding: 22px 20px 18px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.25);
+}
+
+.x {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 0;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.x:hover { opacity: 1; }
+
+.tit {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+
+.pop .form {
+  display: grid;
+  gap: 12px;
+}
+
+.pop .f span {
+  display: block; 
+  font-size: 12px;
+  opacity: 0.75;
+  margin: 0 0 6px;
+}
+
+.pop .f input {
+  width: 100%;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.12);
+  padding: 0 12px;
+  outline: none;
+  background: rgba(255,255,255,0.95);
+}
+
+.pop .f input:focus {
+  border-color: rgba(79, 110, 247, 0.55);
+}
+
+.pop .ok {
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  background: #4f6ef7;
+  color: #fff;
+}
+.pop .ok:hover { background: #3d5ae0; }
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.pop .foot a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.75);
+}
+.pop .foot a:hover { text-decoration: underline; }
+
+.pop .m { opacity: 0.7; }
